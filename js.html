@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание JS</title>
+</head>
+<body>
+    <script>
+    var sx = +prompt("Начальное значение");
+    var ex = +prompt("Конечное значение");
+    var dx = +prompt("Шаг");
+    var result = 0 ;
+    for (let i = sx; i <= ex; i += dx)
+    {
+        result = Math.log(2.71828,(-i));
+        console.log(result.toFixed(5));
+    }
+    </script>
+</body>
+</html>
