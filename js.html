@@ -8,15 +8,19 @@
 </head>
 <body>
     <script>
-    var sx = +prompt("Начальное значение");
-    var ex = +prompt("Конечное значение");
-    var dx = +prompt("Шаг");
+   var x = +prompt("X");
+    var n = +prompt("N");
     var result = 0 ;
-    for (let i = sx; i <= ex; i += dx)
+    function factorial(n) 
     {
-        result = Math.pow(Math.E,(-i));
-        console.log(result.toFixed(5));
+    return (n != 1) ? n * factorial(n - 1) : 1;
     }
+    for (let i = 1; i <= n; i ++)
+    {   
+        result += (Math.pow(-1,n) * Math.pow(x,n)) / factorial(n) ;
+        
+    }
+    console.log(result);
     </script>
 </body>
 </html>
