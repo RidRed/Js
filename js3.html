@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Js №3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+
+    <script>
+    var length = +prompt("Длина массива")
+    var mass = []
+    
+    for(let i = 0; i < length ; i ++ )
+    {
+        
+        mass[i] = +prompt("Введите число:"+ i )
+
+    }
+
+    console.log(mass);
+    minElemen = Math.min.apply(null,mass);
+    console.log("Минимальное значение:" +minElemen);
+    maxElemen = Math.max.apply(null,mass);
+    console.log("Максимальное значение:"+maxElemen);
+    
+    
+    </script>
+</body>
+</html>
