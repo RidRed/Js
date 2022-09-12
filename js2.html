@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание JS №2</title>
+</head>
+<body>
+
+    <div class = "all"> 
+      <label>
+        X:
+        <input type = "text" id = "X" value = "">
+      </label>
+      <label> 
+        N:
+        <input type = "text" id = "N" value = "">
+      </label>
+      <button onclick = "Pod()">Подтвердить</button>
+    </div>
+    <script>
+  
+    
+  function Pod()
+  {
+    
+    var result = 0 ;
+    var x = X.value ;
+    var n = N.value ;
+    function factorial(n){
+  let answer = 1;
+  if (n == 0 || n == 1){
+    return answer;
+  }else{
+    for(var i = n; i >= 1; i--){
+      answer = answer * i;
+    }
+    return answer;
+  }  
+}
+    for (let i = 1; i <= n; i ++)
+    {   
+        result += (Math.pow(-1,n) * Math.pow(x,n)) / factorial(n) ;
+        
+    }
+    console.log(result);
+  }
+
+    
+    
+
+    
+
+    </script>
+    
+</body>
+</html>
